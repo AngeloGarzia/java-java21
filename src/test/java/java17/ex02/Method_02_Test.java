@@ -41,7 +41,7 @@ public class Method_02_Test {
         // TODO l'implémentation réutilise la méthode format() de l'interface
         @Override
         public String format(){
-            return "DaoA" + IDao.super.format();
+            return this.getClass().getSimpleName() + IDao.super.format();
         }
 
     }
